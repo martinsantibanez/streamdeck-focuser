@@ -12,8 +12,24 @@
       ],
       "SupportedInMultiActions": true,
       "Tooltip": "Focus window",
-      "UUID": "com.synkrono.focuswindow",
+      "UUID": "com.valpro.windowfocuser",
       "PropertyInspectorPath": "PropertyInspector/FocusWindow/FocusWindow.html"
+    },
+    {
+      "Icon": "Images/noicon",
+      "Name": "Display Action",
+      "States": [
+        {
+          "Image": "Images/noicon",
+          "TitleAlignment": "middle",
+          "FontSize": "13",
+          "TitleColor": "White"
+
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "Tooltip": "Display Action",
+      "UUID": "com.valpro.windowfocuser.displayaction"
     }
   ],
   "Author": "Synkrono",
@@ -22,13 +38,21 @@
   "Icon": "Images/pluginIcon",
   "URL": "https://synkrono.com/",
   "Version": "2.0",
-  "CodePath": "com.synkrono.focuswindow",
-  "Category": "Synkrono AS",
+  "CodePath": "com.valpro.windowfocuser",
+  "Category": "Focuser",
   "CategoryIcon": "Images/categoryIcon",
   "OS": [
     {
       "Platform": "windows",
       "MinimumVersion": "10"
+    }
+  ],
+  "Profiles": [
+    {
+      "Name": "AppFocuser",
+      "ReadOnly": true,
+      "DeviceType": 0,
+      "DontAutoSwitchWhenInstalled": true
     }
   ],
   "SDKVersion": 2,

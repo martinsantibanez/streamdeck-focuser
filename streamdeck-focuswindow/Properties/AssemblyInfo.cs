@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("com.synkrono.focuswindow")]
+[assembly: AssemblyTitle("com.valpro.windowfocuser")]
 [assembly: AssemblyDescription("Stream Deck plugin to focus a window")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Synkrono AS")]
-[assembly: AssemblyProduct("com.synkrono.focuswindow")]
+[assembly: AssemblyProduct("com.valpro.windowfocuser")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

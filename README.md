@@ -10,3 +10,4 @@ Allows you to focus on a window given a process name and/or windows title filter
 ## Dependencies
 * Uses StreamDeck-Tools by BarRaider: [![NuGet](https://img.shields.io/nuget/v/streamdeck-tools.svg?style=flat)](https://www.nuget.org/packages/streamdeck-tools)
 * Uses [Easy-PI](https://github.com/BarRaider/streamdeck-easypi) by BarRaider - Provides seamless integration with the Stream Deck PI (Property Inspector) 
+* Based on [streamdeck-focuswindow by raymond-holmboe](https://github.com/raymond-holmboe/streamdeck-focuswindow) and Audio Mixer from [streamdeck-wintools by BarRaider](https://github.com/BarRaider/streamdeck-wintools)
