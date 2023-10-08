@@ -288,7 +288,7 @@ namespace Synkrono.FocusWindow.Backend
 
                 Image image = FetchProcessImage(processes[currentApp].Id);
                 Logger.Instance.LogMessage(TracingLevel.DEBUG, $"DrawAppsRow: row {currentRow} col {currentColumn} title {processes[currentApp].MainWindowTitle} index {currentApp}");
-
+                   
                 actions.Add(new UIActionSettings()
                 {
                     Coordinates = new KeyCoordinates() { Row = currentRow, Column = currentColumn },
@@ -401,13 +401,21 @@ namespace Synkrono.FocusWindow.Backend
         private Process getProcessFromCoordinates(KeyCoordinates coordinates)
         {
             int appIndex = (currentPage * appsPerPage) + (coordinates.Row * 4) + coordinates.Column - 1;
-            Process process = processes[appIndex];
-            return process;
+            if (appIndex < processes.Count)
+            {
+                Process process = processes[appIndex];
+                return process;
+            }
+            return null;
         }
 
         private async Task HandleAppPress(KeyCoordinates coordinates)
         {
             Process process = getProcessFromCoordinates(coordinates);
+            if(process == null)
+            {
+                return;
+            }
             var windowfinder = new WindowFinder();
             (IntPtr main, IntPtr child) = windowfinder.FindWindowWithText(null, process.ProcessName);
             var windowfocuser = new WindowFocuser();

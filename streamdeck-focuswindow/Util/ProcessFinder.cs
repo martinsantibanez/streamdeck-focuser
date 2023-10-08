@@ -21,6 +21,7 @@ namespace Synkrono.FocusWindow.Util
 
         public List<Process> GetProcessesWithMainWindow()
         {
+            WindowFinder
             var allprocesses = Process.GetProcesses();
             var processes = allprocesses
                 .Where(p => (long)p.MainWindowHandle != 0)
