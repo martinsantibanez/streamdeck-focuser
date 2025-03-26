@@ -41,8 +41,8 @@ namespace Synkrono.FocusWindow.Backend
 
         private const int NEXT_IMAGE = 0;
         private const int PREV_IMAGE = 1;
-        private const int EXIT_IMAGE = 4;
-        private readonly string[] imageFiles = { @"images\page_next.png", @"images\page_previous.png", @"images\volume_decrease.png", @"images\volume_increase.png", @"images\exit.png" };
+        private const int EXIT_IMAGE = 2;
+        private readonly string[] imageFiles = { @"images\page_next.png", @"images\page_previous.png", @"images\exit.png" };
         private readonly Image[] prefectchedImages = null;
 
         #endregion
